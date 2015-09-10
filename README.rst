@@ -56,21 +56,14 @@ Example
 
 INSTALLATION
 ============
-Same as libvmod-example installation instructions
+The source tree is based on autotools to configure the building, and
+does also have the necessary bits in place to do functional unit tests
+using the varnishtest tool.
 
-Usage::
+Example build instructions:
 
- yum install python-docutils or apt-get install python-docutils
  ./autogen.sh
- ./configure VARNISHSRC=DIR [VMODDIR=DIR]
-
-`VARNISHSRC` is the directory of the Varnish source tree for which to
-compile your vmod. Both the `VARNISHSRC` and `VARNISHSRC/include`
-will be added to the include search paths for your module.
-
-Optionally you can also set the vmod install directory by adding
-`VMODDIR=DIR` (defaults to the pkg-config discovered directory from your
-Varnish installation).
+ ./configure
 
 Make targets:
 
