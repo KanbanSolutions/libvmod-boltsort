@@ -1,3 +1,4 @@
-Module boltsort
-Init init_function
-Function STRING sort(STRING)
+$Module boltsort 3 boltsort VMOD
+$Init init_function
+$Function STRING boltsort(REAL delta)
+$Function STRING html()
